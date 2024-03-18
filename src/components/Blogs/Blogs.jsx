@@ -7,7 +7,7 @@ const Blogs = ({ handleAddToBookmark, handleMarkAsRead }) => {
 	const [blogs, set_blogs] = useState([]);
 
 	useEffect(() => {
-		fetch("../../../public/blogs.json")
+		fetch("blogs.json")
 			.then((res) => res.json())
 			.then((data) => set_blogs(data))
 			.catch((err) => console.error("err", err));
