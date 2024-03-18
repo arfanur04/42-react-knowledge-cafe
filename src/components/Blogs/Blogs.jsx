@@ -28,7 +28,7 @@ const Blogs = ({ handleAddToBookmark }) => {
 };
 
 Blogs.propTypes = {
-	handleAddToBookmark: PropTypes.func.isRequired,
+	handleAddToBookmark: PropTypes.func,
 };
 
 export default Blogs;
